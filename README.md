@@ -1,42 +1,8 @@
-# Nuxt 3 Minimal Starter
+# Classroom of the Elite Light Novel Special Website 
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Technologies: Vue 3, Nuxt 3, Vuetify 3, TailwindCSS, JavaScript, TypeScript, Markdown, JSON<br/>
+Preview Images:
+<br/>
+<img src="https://cdn.discordapp.com/attachments/775822548519616562/1058752530164744393/image.png">
+<img src="https://cdn.discordapp.com/attachments/775822548519616562/1058752651820539994/image.png">
+<img src="https://cdn.discordapp.com/attachments/775822548519616562/1058752606832435220/image.png">
