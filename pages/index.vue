@@ -1,7 +1,7 @@
 <template>
   <v-app :theme="theme">
     <v-app-bar location="top">
-<v-btn @click="send('/')" prepend-icon="mdi-home">Ana Sayfa</v-btn>
+<v-btn prepend-icon="mdi-home">Ana Sayfa</v-btn>
 <v-btn @click="send('/volumes')" prepend-icon="mdi-bookmark-box-multiple">Ciltler</v-btn>
 <v-btn @click="send('/characters')" prepend-icon="mdi-account-multiple">Karakterler</v-btn>
       <v-spacer></v-spacer>
