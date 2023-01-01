@@ -1,5 +1,17 @@
 <template>
-    <LeftMenu/>
+    <v-app :theme="theme">
+        <v-app-bar location="top">
+<v-btn @click="send('/')" prepend-icon="mdi-home">Ana Sayfa</v-btn>
+<v-btn @click="send('/volumes')" prepend-icon="mdi-bookmark-box-multiple">Ciltler</v-btn>
+<v-btn @click="send('/characters')" prepend-icon="mdi-account-multiple">Karakterler</v-btn>
+      <v-spacer></v-spacer>
+      <v-btn
+        :icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'"
+        @click="onClick"
+      ></v-btn>  
+    </v-app-bar>
+
+    <v-main>
     <div class="d-flex flex-row mb-6 flex-wrap">
   <v-card
     v-for="item of chars.characters"
@@ -7,7 +19,6 @@
     class="ma-2 pa-2"
     min-width="275"
     max-width="275"
-    color="#252732"
   >
     <v-img
       :src="item.image"
@@ -43,8 +54,17 @@
         </v-card-text>
   </v-card>
   </div>
+</v-main>
+  </v-app>
 </template>
 <script setup>
+  import { ref } from 'vue'
+
+const theme = ref('dracula')
+
+function onClick () {
+  theme.value = theme.value === 'light' ? 'dracula' : 'light'
+}
 const show = true
 function send(url) {
     window.location.href = url
