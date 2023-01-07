@@ -12,7 +12,7 @@
     </v-app-bar>
 
     <v-main>
-    <div class="d-flex flex-row mb-6 flex-wrap">
+    <div class="d-flex flex-row mb-6 flex-wrap justify-center">
   <v-card
     v-for="item of chars.characters"
     :key="item"
