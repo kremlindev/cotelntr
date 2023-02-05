@@ -12,7 +12,7 @@
     </v-app-bar>
 
     <v-main class="px-5">
-    <div class="d-flex flex-row mb-6 flex-wrap">
+    <div class="d-flex flex-row mb-6 flex-wrap justify-center">
   <v-card
     v-for="item of vols.volumes"
     :key="item"
@@ -63,6 +63,16 @@
   import { ref } from 'vue'
 
   const theme = ref('dracula')
+
+  useHead({
+    title: "Ciltler - CoteLNTR",
+    link: [
+        {
+            href: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/2ccc68f6-b1cd-46f9-b3da-3050a7462aa0/ddzdawm-5ac2e216-d488-49db-b386-74c9b4bf9438.png/v1/fill/w_256,h_256,strp/classroom_of_the_elite_icon_folder_by_assorted24_ddzdawm-fullview.png",
+            rel: "icon"
+        }
+    ]
+})
 
   function onClick () {
     theme.value = theme.value === 'light' ? 'dracula' : 'light'
@@ -189,10 +199,140 @@ const vols = {
             "no": 11,
             "cover": ["Masayoshi Hashimoto", "Masumi Kamuro"],
             "date": "25 Eylül 2018",
-            "next": "Sene 2 Cilt 1",
+            "next": "Cilt 10",
             "image": "https://cdn.discordapp.com/attachments/775822548519616562/1059127959677579274/LN_Vol_09_cover.webp",
             "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_Volume_9"
         },
+        {
+            "name": "Cilt 10",
+            "fullname": "Light Novel Cilt 10",
+            "no": 12,
+            "cover": ["Miyabi Nagumo", "Nazuna Asahina"],
+            "date": "25 Ocak 2019",
+            "next": "Cilt 11",
+            "image": "https://cdn.discordapp.com/attachments/775822548519616562/1071804425447944202/LN_Vol_10_cover.webp",
+            "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_Volume_10"
+        },
+        {
+            "name": "Cilt 11",
+            "fullname": "Light Novel Cilt 11",
+            "no": 13,
+            "cover": ["Mei-Yu Wang", "Rokusuke Kōenji"],
+            "date": "25 Mayıs 2019",
+            "next": "Cilt 11.5",
+            "image": "https://cdn.discordapp.com/attachments/775822548519616562/1071804947571683439/LN_Vol_11_cover.webp",
+            "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_Volume_11"
+        },
+        {
+            "name": "Cilt 11.5",
+            "fullname": "Light Novel Cilt 11.5",
+            "no": 14,
+            "cover": ["Honami Ichinose"],
+            "date": "25 Eylül 2019",
+            "next": "Sene 2 Cilt 1",
+            "image": "https://static.wikia.nocookie.net/youkoso-jitsuryoku-shijou-shugi-no-kyoushitsu-e/images/5/5b/LN_Vol_11.5_cover.jpg",
+            "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_Volume_11.5"
+        },
+        {
+            "name": "Yıl 2 Cilt 1",
+            "fullname": "Light Novel Yıl 2 Cilt 1",
+            "no": 15,
+            "cover": ["Kiyotaka Ayanokōji", "Tsubasa Nanase"],
+            "date": "24 Ocak 2020",
+            "next": "Sene 2 Cilt 2",
+            "image": "https://cdn.discordapp.com/attachments/775822548519616562/1071797868819665006/LN_2nd_Year_Vol_01_cover.webp",
+            "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_2nd_Year_Volume_1"
+        },
+        {
+            "name": "Yıl 2 Cilt 2",
+            "fullname": "Light Novel Yıl 2 Cilt 2",
+            "no": 16,
+            "cover": ["Ichika Amasawa", "Kazuomi Hōsen"],
+            "date": "25 Haziran 2020",
+            "next": "Sene 2 Cilt 3",
+            "image": "https://cdn.discordapp.com/attachments/775822548519616562/1071801334757605476/LN_2nd_Year_Vol_02_cover.webp",
+            "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_2nd_Year_Volume_2"
+        },
+        {
+            "name": "Yıl 2 Cilt 3",
+            "fullname": "Light Novel Yıl 2 Cilt 3",
+            "no": 17,
+            "cover": ["Riku Utomiya", "Sakurako Tsubaki"],
+            "date": "24 Ekim 2020",
+            "next": "Sene 2 Cilt 4",
+            "image": "https://cdn.discordapp.com/attachments/775822548519616562/1071802339339538432/LN_2nd_Year_Vol_03_cover.webp",
+            "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_2nd_Year_Volume_3"
+        },
+        {
+            "name": "Yıl 2 Cilt 4",
+            "fullname": "Light Novel Yıl 2 Cilt 4",
+            "no": 18,
+            "cover": ["Takuya Yagami", "Fūka Kiryūin"],
+            "date": "24 Şubat 2021",
+            "next": "Sene 2 Cilt 4.5",
+            "image": "https://cdn.discordapp.com/attachments/775822548519616562/1071807563391324260/LN_2nd_Year_Vol_04_cover.webp",
+            "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_2nd_Year_Volume_4"
+        },
+        {
+            "name": "Yıl 2 Cilt 4.5",
+            "fullname": "Light Novel Yıl 2 Cilt 4.5",
+            "no": 19,
+            "cover": ["Tsubasa Nanase"],
+            "date": "24 Haziran 2021",
+            "next": "Sene 2 Cilt 5",
+            "image": "https://cdn.discordapp.com/attachments/775822548519616562/1071807620127674448/LN_2nd_Year_Vol_4.5_cover.webp",
+            "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_2nd_Year_Volume_4.5"
+        },
+        {
+            "name": "Yıl 2 Cilt 5",
+            "fullname": "Light Novel Yıl 2 Cilt 5",
+            "no": 20,
+            "cover": ["Maya Satō", "Chiaki Matsushita"],
+            "date": "24 Ekim 2021",
+            "next": "Sene 2 Cilt 6",
+            "image": "https://cdn.discordapp.com/attachments/775822548519616562/1071807655024275646/LN_2nd_Year_Vol_05_cover.webp",
+            "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_2nd_Year_Volume_5"
+        },
+        {
+            "name": "Yıl 2 Cilt 6",
+            "fullname": "Light Novel Yıl 2 Cilt 6",
+            "no": 21,
+            "cover": ["Kayano Onodera", "Ken Sudō"],
+            "date": "24 Şubat 2022",
+            "next": "Sene 2 Cilt 7",
+            "image": "https://cdn.discordapp.com/attachments/775822548519616562/1071807736129532015/LN_2nd_Year_Vol_06_cover.webp",
+            "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_2nd_Year_Volume_6"
+        },
+        {
+            "name": "Yıl 2 Cilt 7",
+            "fullname": "Light Novel Yıl 2 Cilt 7",
+            "no": 22,
+            "cover": ["Ryūji Kanzaki", "Yuki Himeno"],
+            "date": "24 Haziran 2022",
+            "next": "Sene 2 Cilt 8",
+            "image": "https://cdn.discordapp.com/attachments/775822548519616562/1071807816467218503/LN_2nd_Year_Vol_07_cover.webp",
+            "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_2nd_Year_Volume_7"
+        },
+        {
+            "name": "Yıl 2 Cilt 8",
+            "fullname": "Light Novel Yıl 2 Cilt 8",
+            "no": 23,
+            "cover": ["Daichi Ishizaki", "Takeko Nishino"],
+            "date": "24 Ekim 2022",
+            "next": "Sene 2 Cilt 9",
+            "image": "https://cdn.discordapp.com/attachments/775822548519616562/1071807881663479918/LN_2nd_Year_Vol_08_cover.webp",
+            "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_2nd_Year_Volume_8"
+        },
+        {
+            "name": "Yıl 2 Cilt 9",
+            "fullname": "Light Novel Yıl 2 Cilt 9",
+            "no": 25,
+            "cover": ["Mako Amikura", "Norihito Watanabe "],
+            "date": "25 Şubat 2023",
+            "next": "Henüz Duyurulmadı",
+            "image": "https://cdn.discordapp.com/attachments/775822548519616562/1071807930271285268/1000.png",
+            "fandom": "https://you-zitsu.fandom.com/wiki/Light_Novel_2nd_Year_Volume_9"
+        }
     ]
 }
 </script>

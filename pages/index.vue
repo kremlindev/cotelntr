@@ -23,10 +23,11 @@
           <v-card
           >
             <div class="d-flex flex-no-wrap justify-space-between">
-              <div>
+              <div class="crop">
                 <v-img
-      src="https://preview.redd.it/can-we-have-this-illustration-as-the-subreddits-banner-v0-uy9t98944l3a1.jpg?auto=webp&s=2bbbe825f635d599be5e2c2597ef76c345c4b019"
+      src="https://cdn.discordapp.com/attachments/775822548519616562/1071820792448434176/image_widget_4h9dqarfknq61.jpg"
       cover
+      height="300px"
     >
     </v-img>
                 <v-card-title class="text-h5">
@@ -56,6 +57,16 @@
 
 const theme = ref('dracula')
 
+useHead({
+    title: "Anasayfa - CoteLNTR",
+    link: [
+        {
+            href: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/2ccc68f6-b1cd-46f9-b3da-3050a7462aa0/ddzdawm-5ac2e216-d488-49db-b386-74c9b4bf9438.png/v1/fill/w_256,h_256,strp/classroom_of_the_elite_icon_folder_by_assorted24_ddzdawm-fullview.png",
+            rel: "icon"
+        }
+    ]
+})
+
 function onClick () {
   theme.value = theme.value === 'light' ? 'dracula' : 'light'
 }
@@ -68,6 +79,12 @@ const episodes = [
     "y": "2",
     "v": "5",
     "e": "20"
+  },
+  {
+    "title": "2. Yıl Cilt 5 Bölüm 19 - Elveda",
+    "y": "2",
+    "v": "5",
+    "e": "19"
   }
 ]
 </script>
